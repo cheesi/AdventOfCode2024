@@ -7,7 +7,12 @@ public class Day01Tests
     {
         // Arrange
         var input = """
-
+                    3   4
+                    4   3
+                    2   5
+                    1   3
+                    3   9
+                    3   3
                     """;
         var systemUnderTest = new Day01(input);
 
@@ -15,7 +20,7 @@ public class Day01Tests
         var result = await systemUnderTest.Solve_1();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("11");
     }
 
 
@@ -24,7 +29,12 @@ public class Day01Tests
     {
         // Arrange
         var input = """
-
+                    3   4
+                    4   3
+                    2   5
+                    1   3
+                    3   9
+                    3   3
                     """;
         var systemUnderTest = new Day01(input);
 
@@ -32,6 +42,6 @@ public class Day01Tests
         var result = await systemUnderTest.Solve_2();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("31");
     }
 }
