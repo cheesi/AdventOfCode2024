@@ -7,7 +7,16 @@ public class Day04Tests
     {
         // Arrange
         var input = """
-
+                    MMMSXXMASM
+                    MSAMXMSMSA
+                    AMXSXMAAMM
+                    MSAMASMSMX
+                    XMASAMXAMM
+                    XXAMMXXAMA
+                    SMSMSASXSS
+                    SAXAMASAAA
+                    MAMMMXMMMM
+                    MXMXAXMASX
                     """;
         var systemUnderTest = new Day04(input);
 
@@ -15,7 +24,7 @@ public class Day04Tests
         var result = await systemUnderTest.Solve_1();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("18");
     }
 
 
@@ -24,7 +33,16 @@ public class Day04Tests
     {
         // Arrange
         var input = """
-
+                    MMMSXXMASM
+                    MSAMXMSMSA
+                    AMXSXMAAMM
+                    MSAMASMSMX
+                    XMASAMXAMM
+                    XXAMMXXAMA
+                    SMSMSASXSS
+                    SAXAMASAAA
+                    MAMMMXMMMM
+                    MXMXAXMASX
                     """;
         var systemUnderTest = new Day04(input);
 
@@ -32,6 +50,6 @@ public class Day04Tests
         var result = await systemUnderTest.Solve_2();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("9");
     }
 }
