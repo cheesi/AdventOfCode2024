@@ -7,7 +7,16 @@ public class Day06Tests
     {
         // Arrange
         var input = """
-
+                    ....#.....
+                    .........#
+                    ..........
+                    ..#.......
+                    .......#..
+                    ..........
+                    .#..^.....
+                    ........#.
+                    #.........
+                    ......#...
                     """;
         var systemUnderTest = new Day06(input);
 
@@ -15,7 +24,7 @@ public class Day06Tests
         var result = await systemUnderTest.Solve_1();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("41");
     }
 
 
@@ -24,7 +33,16 @@ public class Day06Tests
     {
         // Arrange
         var input = """
-
+                    ....#.....
+                    .........#
+                    ..........
+                    ..#.......
+                    .......#..
+                    ..........
+                    .#..^.....
+                    ........#.
+                    #.........
+                    ......#...
                     """;
         var systemUnderTest = new Day06(input);
 
@@ -32,6 +50,6 @@ public class Day06Tests
         var result = await systemUnderTest.Solve_2();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("6");
     }
 }
