@@ -7,7 +7,7 @@ public class Day11Tests
     {
         // Arrange
         var input = """
-
+                    125 17
                     """;
         var systemUnderTest = new Day11(input);
 
@@ -15,7 +15,7 @@ public class Day11Tests
         var result = await systemUnderTest.Solve_1();
 
         // Assert
-        result.Should().Be("36");
+        result.Should().Be("55312");
     }
 
     [Fact]
