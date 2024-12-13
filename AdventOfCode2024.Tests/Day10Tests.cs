@@ -1,13 +1,20 @@
 ﻿namespace AdventOfCode2024.Tests;
 
-public class Da10Tests
+public class Day10Tests
 {
     [Fact]
     public async Task Part1()
     {
         // Arrange
         var input = """
-
+                    89010123
+                    78121874
+                    87430965
+                    96549874
+                    45678903
+                    32019012
+                    01329801
+                    10456732
                     """;
         var systemUnderTest = new Day10(input);
 
@@ -15,7 +22,7 @@ public class Da10Tests
         var result = await systemUnderTest.Solve_1();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("36");
     }
 
     [Fact]
@@ -23,7 +30,14 @@ public class Da10Tests
     {
         // Arrange
         var input = """
-
+                    89010123
+                    78121874
+                    87430965
+                    96549874
+                    45678903
+                    32019012
+                    01329801
+                    10456732
                     """;
         var systemUnderTest = new Day10(input);
 
@@ -31,6 +45,6 @@ public class Da10Tests
         var result = await systemUnderTest.Solve_2();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("81");
     }
 }
