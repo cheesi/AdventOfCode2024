@@ -23,7 +23,7 @@ public class Day11Tests
     {
         // Arrange
         var input = """
-
+                    125 17
                     """;
         var systemUnderTest = new Day11(input);
 
@@ -31,6 +31,6 @@ public class Day11Tests
         var result = await systemUnderTest.Solve_2();
 
         // Assert
-        result.Should().Be("");
+        result.Should().Be("65601038650482");
     }
 }
